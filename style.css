@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Base font size */
+    line-height: 1.5;
+}
+
+.menu__block {
+    height: 3em;
+    background-color: rgb(168, 102, 102);
+    display: flex;
+    justify-content: space-between; /* Ensure title and menu items spread out */
+    align-items: center;
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.title__text {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em; /* Larger font size for title */
+}
+
+.card {
+    background: lightgray;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 8px; /* Add rounded corners */
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+.gallery__flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust min and max width */
+    grid-gap: 20px; /* Increase the gap between cards */
+    padding: 20px; /* Add padding around the gallery */
+}
+
+img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners to images */
+}
+
+@media screen and (max-width: 768px) {
+    .menu__block {
+        flex-direction: column; /* Stack menu items vertically on smaller screens */
+        height: auto; /* Allow the menu block to expand with its content */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .title__text {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+        margin-bottom: 10px; /* Add space below the title */
+    }
+
+    .gallery__flex {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Further adjust column width */
+        grid-gap: 10px; /* Reduce gap between cards */
+        padding: 10px; /* Reduce padding around the gallery */
+    }
+
+    .card {
+        margin: 5px; /* Adjust margin for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}

@@ -6,123 +6,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <title>HTML Templates</title>
 </head>
 
 <body>
     <nav>
         <div class="menu__block">
-            <h2 class="title__text">HTML Templates</h2>
+            <h2 id="title" class="title__text animate__animated"></h2>
+            <button id="dark-mode-toggle">
+                <i id="dark-mode-icon" class="fas fa-moon"></i> <!-- Initially moon icon -->
+            </button>
         </div>
     </nav>
 
     <section class="gallery__flex">
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?coding" alt="">
+            <img src="./card image/blur.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Blur Landing</h3>
                 <a href='/blurlanding/blurlanding.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?programming" alt="">
+            <img src="./card image/crops web.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Responsive Site</h3>
                 <a href='/corps/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?coding" alt="">
+            <img src="./card image/CSS Grid Responsive.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Responsive Site Grid</h3>
                 <a href='/cssgridresponsive/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?coding" alt="">
+            <img src="./card image/full screen landing.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Full Screen Landing</h3>
                 <a href='/fullscreenlanding/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?coding" alt="">
+            <img src="/card image/mytunes.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">iTunes Clone</h3>
                 <a href='/mytune/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?javascript" alt="">
+            <img src="/card image/paralaxx.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Parallax Site</h3>
                 <a href='/parallaxsite/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?html" alt="">
+            <img src="/card image/photography site.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">PhotoGraphy Site</h3>
                 <a href='/photographysite/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?css" alt="">
+            <img src="/card image/puralsite.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">PluralSight Clone</h3>
                 <a href='/pluralsightclone/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?coding" alt="">
+            <img src="/card image/vd background.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">VideoBackground Site</h3>
                 <a href='/videobackground/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?css" alt="">
+            <img src="/card image/videoform.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Video Form</h3>
                 <a href='/videoform/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?coding" alt="">
+            <img src="/card image/album layout.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Album Layout</h3>
                 <a href='/albumlayout/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?css" alt="">
+            <img src="/card image/img gallary.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Masonary Image Gallery</h3>
                 <a href='/masonaryimagegallery/index.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?coding" alt="">
+            <img src="/card image/style conference.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Style Conference</h3>
                 <a href='/styledconferences/styledconferences.html' target='_blank'>Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?css" alt="">
+            <img src="/card image/freecodecamp survey.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Codepen Clone</h3>
                 <a href="https://codepen.io/adityaastic/pen/Povwmxr" target="_blank">Link</a>
             </div>
         </div>
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?coding" alt="">
+            <img src="/card image/restorant.png" alt="">
             <div class="card-content">
                 <h3 class="card-title">Restaurant Website</h3>
                 <a href='/restaurantwebsite/index.html' target='_blank'>Link</a>
             </div>
         </div>
     </section>
+
+    <script>
+        // Function to animate the text
+        function animateText() {
+            const title = document.getElementById('title');
+            const text = "HTML Templates..!";
+            let index = 0;
+
+            function typeWriter() {
+                if (index < text.length) {
+                    title.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 200); // Delay between each letter
+                } else {
+                    setTimeout(eraseText, 1000); // Wait for 1 second, then erase text
+                }
+            }
+
+            function eraseText() {
+                const currentText = title.innerHTML;
+                if (currentText.length > 0) {
+                    title.innerHTML = currentText.slice(0, -1);
+                    setTimeout(eraseText, 100); // Delay before erasing next character
+                } else {
+                    setTimeout(animateText, 1000); // Wait for 1 second, then start animation again
+                }
+            }
+
+            typeWriter(); // Start the animation
+        }
+
+        // Call the function to animate the text when the DOM is ready
+        document.addEventListener('DOMContentLoaded', animateText);
+
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const darkModeIcon = document.getElementById('dark-mode-icon');
+            const body = document.body;
+
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                if (body.classList.contains('dark-mode')) {
+                    darkModeIcon.classList.remove('fa-moon');
+                    darkModeIcon.classList.add('fa-sun');
+                } else {
+                    darkModeIcon.classList.remove('fa-sun');
+                    darkModeIcon.classList.add('fa-moon');
+                }
+            });
+        }
+
+        // Call the function to toggle dark mode when the DOM is ready
+        document.addEventListener('DOMContentLoaded', toggleDarkMode);
+    </script>
+
 
 </body>
 
